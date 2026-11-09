@@ -1,0 +1,28 @@
+name: CICD
+on:
+  workflow_dispatch:
+
+   jobs:
+     code:
+      runs-on: ununtu-latest
+      steps:
+       - name: clone the code
+         run: echo "cloning the code"
+     
+     build:
+      run-on: ununtu-latest
+      steps:
+       - name: build using docker
+        run: echo "building using docker"
+     
+     test:
+      run-on: ununtu-latest
+      steps:
+       - name: running test case
+        run: echo "testing the app"
+     
+     deploy:
+      runs-on: ununtu-latest
+      steps:
+       - name: deplouing on the machine
+        run: echo "deploying the code"
