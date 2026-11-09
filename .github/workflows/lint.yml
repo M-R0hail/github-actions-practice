@@ -10,8 +10,6 @@ jobs:
     steps:
      - name: checkout the code\
       uses: actions/checkout@v7
-     - name: install lintur
-     runL: pip install ruff
         
 
    
