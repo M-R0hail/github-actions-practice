@@ -1,0 +1,15 @@
+name: Auto Linter
+
+on:
+  push:
+   paths: "*.py"
+jobs:
+  code:
+
+    run-on: ununtu-latest
+    steps:
+     - name: checkout the code\
+        uses: actions/checkout@v4
+
+   
+  
