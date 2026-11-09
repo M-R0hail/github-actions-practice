@@ -1,0 +1,12 @@
+
+name: Hello
+
+on:
+  workflow_dispatch: 
+
+jobs:
+  say-hello:
+    runs-on: ununtu-latest
+    steps:
+     - name: say hello to everyone
+       run: echo "Hello Dosto"
